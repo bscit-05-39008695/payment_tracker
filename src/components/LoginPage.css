@@ -1,0 +1,144 @@
+/* Ensure the login container aligns to the start */
+.log_flex {
+  display: flex;
+  height: 100vh;
+  justify-content: flex-start; /* Align items to the start horizontally */
+  align-items: flex-start;     /* Align items to the top vertically */
+  background-color: #141414;
+  width: 100%;
+}
+
+/* Adjust .log_flex_one to ensure it aligns to the top and increases its width */
+.log_flex_one {
+  flex: 1;
+  padding: 20px;
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: column; /* Ensure items inside are aligned vertically */
+  width: 70%;  /* Increase the width to 70% or adjust as needed */
+  max-width: 615px; /* Add a max-width if you want a cap on the width */
+  height: 800px;
+}
+
+.logo_one .img img {
+  width: 100px;  /* Adjust as per your design */
+}
+
+h5 {
+  font-size: 1.8rem; /* Increased font size */
+}
+
+.se_l_flex {
+  display: flex;
+  padding-left: 5px;
+}
+
+.p_l_s_o {
+  color: #C5F74F;
+  text-decoration: none;
+  margin-top: 15px;
+  font-size: 1.1rem; /* Increased font size */
+}
+
+.error {
+  color: red;
+  display: none;
+}
+
+input {
+  width: 97%;
+  padding: 13px;
+  background-color: #1C1C1C;
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: white;
+  font-size: 1.1rem; /* Increased font size for input */
+}
+
+input:focus {
+  outline: none;
+  border-color: #C5F74F;
+}
+
+.eye {
+  position: absolute;
+  right: 10px;
+  top: 38px;
+  cursor: pointer;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #C5F74F;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 1.1rem; /* Increased font size for button */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b4e640;
+}
+
+.log_flex_two {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Align the logo to the right end */
+  align-items: center;   /* Align logo at the top */
+  background-color: #141414; /* Optional: Background color if needed */
+  height: 961px;
+}
+
+/* Background relative container for the right logo */
+.log_flex_two_bg_relative {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center; /* Aligns content to the right */
+  align-items: center;
+}
+
+/* The logo image container */
+.log_fle_two_log_bg {
+  width: auto;
+  height: auto;
+  margin-top: 10%;  /* Adjusts the top margin as per your requirement */
+  display: flex;
+  justify-content: center;  /* Ensures the image is right aligned */
+}
+
+.log_fle_two_log_bg .img {
+  width: 100%; /* Full width of the parent container */
+  display: flex;
+  justify-content: center; /* Align the image to the right */
+}
+
+.log_fle_two_log_bg .img img {
+  width: 50%; /* Adjust the size of the image */
+  max-width: 300px; /* Max size for responsiveness */
+  height: auto; /* Keep the aspect ratio intact */
+}
+
+.forgot {
+  display: flex;
+  justify-content: flex-end; /* Align the link to the right */
+  width: 100%;                /* Make sure it takes the full width */
+  margin-top: 10px; 
+  margin-bottom: 10px;          /* Space between the input fields */
+  font-size: 1.1rem;  /* Increased font size for forgot password link */
+}
+
+/* Adjustments for smaller screen sizes */
+@media (max-width: 768px) {
+  .log_flex_one {
+    width: 100%;  /* Take up the entire width on smaller screens */
+    height: 100vh; /* Ensure the height takes up the entire screen */
+  }
+  .log_flex_two {
+    display: none; /* Hide the second container on small screens */
+  }
+}

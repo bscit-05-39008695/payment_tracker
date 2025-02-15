@@ -1,0 +1,149 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.verification-container {
+    min-height: 100vh;
+    background-color: #141414;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.verification-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 93.4vh;  /* Make card fill the full height of the viewport */
+    max-height: 100%; /* Ensure it doesn't overflow */
+}
+
+.verification-header {
+    margin-bottom: 2rem;
+}
+
+.verification-title {
+    font-size: 2rem;  /* Increased font size */
+    font-weight: bold;
+    margin-bottom: 1.5rem;  /* Increased margin */
+}
+
+.verification-description {
+    color: #9ca3af;
+    font-size: 1rem;  /* Increased font size */
+    margin-bottom: 1rem;  /* Increased margin */
+}
+
+.verification-email {
+    color: white;
+}
+
+.verification-input-section {
+    margin-top: 1.5rem;  /* Increased margin */
+}
+
+.verification-label {
+    display: block;
+    font-size: 1rem;  /* Increased font size */
+    color: #9ca3af;
+    margin-bottom: 0.75rem;  /* Increased margin */
+}
+
+.verification-inputs {
+    display: flex;
+    gap: 0.75rem;  /* Increased gap */
+}
+
+.verification-input {
+    width: 48px;  /* Increased input size */
+    height: 48px;  /* Increased input size */
+    text-align: center;
+    background-color: #111827;
+    border: 1px solid #374151;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1.5rem;  /* Increased font size */
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    margin-bottom: 220px;  /* Adjusted margin */
+}
+
+.verification-input:focus {
+    border-color: #22c55e;
+    box-shadow: 0 0 0 1px #22c55e;
+}
+
+.verification-image {
+    display: none;
+    margin-right: 300px;
+    margin-top: 330px;
+}
+
+.side-image {
+    width: 390px;
+    height: 323px;
+}
+.verification-message {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .verification-error {
+    color: #e53e3e;
+  }
+  
+  .verification-success {
+    color: #38a169;
+  }
+  
+  .verification-attempts-message {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #718096;
+    text-align: center;
+  }
+
+/* Media query for larger screens */
+@media (min-width: 1024px) {
+    .verification-image {
+        display: block;
+        margin-left: 350px;  /* Push image to the right */
+    }
+
+    .verification-card {
+        width: 70%;  /* Make card wider on large screens */
+        padding: 2rem 3rem;  /* Adjust padding */
+    }
+}
+
+/* Adjust for very large screens */
+@media (min-width: 1440px) {
+    .verification-card {
+        padding: 2rem 6rem;  /* Increased padding for larger screens */
+        width: 60%;  /* Adjust width */
+    }
+}
+
+/* Handle smaller screens */
+@media (max-width: 1023px) {
+    .verification-container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 2rem;
+    }
+
+    .verification-card {
+        max-width: 100%;
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,89 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  #root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+  }
+  
+  .mtcn-container {
+    max-width: 36rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .mtcn-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #FA6FB2;
+    margin-bottom: 2.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-label {
+    display: block;
+    color: #A0AEC0;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input-container {
+    position: relative;
+  }
+  
+  .mtcn-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #E2E8F0;
+    border-radius: 0.375rem;
+  }
+  
+  .mtcn-input:focus {
+    outline: none;
+    border-color: #FA6FB2;
+  }
+  
+  .input-icon {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #A0AEC0;
+  }
+  
+  .verify-button {
+    width: 100%;
+    background-color: #FA6FB2;
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .verify-button:hover {
+    background-color: #F84D9E;
+  }
+  
+  .gradient-line {
+    height: 0.25rem;
+    width: 15rem;
+    margin-left: auto;
+    margin-top: 2.5rem;
+    background: linear-gradient(to right, #FFD700, #FFF8DC);
+  }
