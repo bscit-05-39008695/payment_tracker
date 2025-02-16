@@ -7,18 +7,37 @@ import VerificationInput from './components/VerificationInput.jsx';
 import MTCNVerification from './components/MTCNVerification.jsx';
 import './index.css';
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
+
+
+function App() {
+  return (
     <Router>
       <Routes>
-        <Route path="/" element={<MTCNVerification onSuccessfulVerification={() => window.location.href = '/payment-tracking'} />} />
+
         <Route path="/payment-tracking" element={<PaymentTracking />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/verification" element={<VerificationInput />} />
+         {/* Default route for MTCN verification page */}
+         <Route path="/" element={<MTCNVerification />} />
         
-        
-        {/* Add other routes if needed */}
+
+        {/* Default route for main page */}
+        <Route path="/"element={
+            <>
+              {/* Render Navbar and Footer on all routes except /login and /verification */}
+              <MTCNVerification/>  
+            </>
+          }
+        />
       </Routes>
     </Router>
-  </StrictMode>
+  );
+}
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
 );
+export default App;
+

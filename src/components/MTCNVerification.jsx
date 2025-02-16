@@ -1,12 +1,15 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 import './MTCNVerificationForm.css';
 
-const MTCNVerificationForm = ({ onSuccessfulVerification }) => {
+const MTCNVerification = ({ onSuccessfulVerification }) => {
   const [mtcnCode, setMtcnCode] = useState('');
   const [error, setError] = useState('');
   const [isValid, setIsValid] = useState(false);
   const VERIFICATION_CODE = '25923'; // Fixed verification code
+
+  const navigate = useNavigate(); // Hook to navigate
 
   const handleChange = (e) => {
     const input = e.target.value;
@@ -30,8 +33,11 @@ const MTCNVerificationForm = ({ onSuccessfulVerification }) => {
       // Successful verification
       console.log('Verification successful');
       if (onSuccessfulVerification) {
-        onSuccessfulVerification(); // Will redirect to the login page
+        onSuccessfulVerification(); // Will trigger external success handler if needed
       }
+      
+      // Navigate to the PaymentTracking component
+      navigate('/payment-tracking'); // Adjust path to match your route setup
     } else {
       setError('Invalid verification code. Please try again.');
       setMtcnCode('');
@@ -78,8 +84,8 @@ const MTCNVerificationForm = ({ onSuccessfulVerification }) => {
   );
 };
 
-MTCNVerificationForm.propTypes = {
-  onSuccessfulVerification: PropTypes.func.isRequired,
+MTCNVerification.propTypes = {
+  onSuccessfulVerification: PropTypes.func,
 };
 
-export default MTCNVerificationForm;
+export default MTCNVerification;
