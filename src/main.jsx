@@ -5,8 +5,6 @@ import PaymentTracking from './components/PaymentTracking.jsx';
 import LoginPage from './components/LoginPage.jsx';
 import VerificationInput from './components/VerificationInput.jsx';
 import MTCNVerification from './components/MTCNVerification.jsx';
-import './index.css';
-
 
 
 function App() {

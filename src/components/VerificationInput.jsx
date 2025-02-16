@@ -109,7 +109,7 @@ const VerificationInput = () => {
     if (codes.every(code => code !== '')) {
       setTimeout(() => handleSubmit(), 100);
     }
-  }, [codes]);
+  });
 
   return (
     <div className="verification-container">
