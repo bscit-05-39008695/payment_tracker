@@ -25,7 +25,8 @@ function App() {
         <Route path="/"element={
             <>
               {/* Render Navbar and Footer on all routes except /login and /verification */}
-              <MTCNVerification/>  
+              <MTCNVerification/> 
+              <PaymentTracking /> 
             </>
           }
         />
