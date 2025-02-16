@@ -39,7 +39,7 @@ const MTCNVerification = ({ onSuccessfulVerification }) => {
       // Navigate to the PaymentTracking component
       navigate('/payment-tracking'); // Adjust path to match your route setup
     } else {
-      setError('Invalid verification code. Please try again.');
+      setError('Invalid MTCNverification code!! Please try again.');
       setMtcnCode('');
       setIsValid(false);
     }

@@ -6,28 +6,16 @@ import LoginPage from './components/LoginPage.jsx';
 import VerificationInput from './components/VerificationInput.jsx';
 import MTCNVerification from './components/MTCNVerification.jsx';
 
-
 function App() {
   return (
     <Router>
       <Routes>
-
         <Route path="/payment-tracking" element={<PaymentTracking />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/verification" element={<VerificationInput />} />
-         {/* Default route for MTCN verification page */}
-         <Route path="/" element={<MTCNVerification />} />
         
-
-        {/* Default route for main page */}
-        <Route path="/"element={
-            <>
-              {/* Render Navbar and Footer on all routes except /login and /verification */}
-              <MTCNVerification/> 
-              <PaymentTracking /> 
-            </>
-          }
-        />
+        {/* Default route for MTCN verification page */}
+        <Route path="/" element={<MTCNVerification />} />
       </Routes>
     </Router>
   );
@@ -38,5 +26,3 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 );
-export default App;
-
