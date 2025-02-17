@@ -112,7 +112,7 @@ const LoginPage = () => {
         <div className="log_flex_two_bg_relative">
           <div className="log_fle_two_log_bg">
             <div className="img">
-              <img src="/src/assets/rightlogo.png" alt="Paxful" style={{ width: '544px', height: '423px' }} />
+              <img src="/src/assets/rightlogo.png" style={{ width: '544px', height: '423px' }} />
             </div>
           </div>
         </div>
