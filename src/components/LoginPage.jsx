@@ -50,7 +50,6 @@ const LoginPage = () => {
       <div className="log_flex_one">
         <div className="logo_one">
           <div className="img">
-            <img src="/src/assets/logo.png" alt="Paxful" />
           </div>
         </div>
         <h5>Welcome back!</h5>
