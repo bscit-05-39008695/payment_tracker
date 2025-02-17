@@ -115,7 +115,7 @@ const VerificationInput = () => {
     <div className="verification-container">
       <div className="verification-card">
         <div className="verification-header">
-          <img src="/src/assets/logo.png" alt="Paxful" className="h-8" />
+        
           <h1 className="verification-title">Verification</h1>
           <p className="verification-description">
             Enter the 6-digit code we sent to the authenticator associated with your account:
@@ -161,11 +161,7 @@ const VerificationInput = () => {
         </div>
       </div>
       <div className="verification-image">
-        <img 
-          src="/src/assets/rightlogo.png" 
-          alt="Verification" 
-          className="side-image"
-        />
+        
       </div>
     </div>
   );
