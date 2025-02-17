@@ -50,6 +50,7 @@ const LoginPage = () => {
       <div className="log_flex_one">
         <div className="logo_one">
           <div className="img">
+            <img src="../assets/logo.png" />
           </div>
         </div>
         <h5>Welcome back!</h5>
