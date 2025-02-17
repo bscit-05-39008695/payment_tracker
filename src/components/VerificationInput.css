@@ -156,8 +156,8 @@ html, body {
     .verification-card {
         max-width: 100%;
         margin-right: 0;
-        margin-left: -15px;
-        height: 774px;  /* Fixed height for small and large phone screens */
+        margin-left: -20px;
+        height: 474px;  /* Fixed height for small and large phone screens */
     }
 
     .verification-inputs {
@@ -174,7 +174,7 @@ html, body {
     }
 
     .verification-card {
-        height: 874px;  /* Fixed height for small and large phone screens */
+        height: 574px;  /* Fixed height for small and large phone screens */
     }
 
     .verification-inputs {
@@ -191,7 +191,7 @@ html, body {
     }
 
     .verification-card {
-        height: 874px;  /* Fixed height for small and large phone screens */
+        height: 674px;  /* Fixed height for small and large phone screens */
     }
 
     .verification-inputs {
