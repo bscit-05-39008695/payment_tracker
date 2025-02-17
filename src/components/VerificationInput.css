@@ -29,9 +29,8 @@ html, body {
 
 .verification-header {
     margin-bottom: 2rem;
-    width: 145px;
-    height: 40px;
 }
+
 
 .verification-title {
     font-size: 2rem;  /* Increased font size */
