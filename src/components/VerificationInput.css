@@ -44,6 +44,7 @@ html, body {
     color: #9ca3af;
     font-size: 1rem;  /* Increased font size */
     margin-bottom: 1rem;  /* Increased margin */
+    margin-top: 50px;
 }
 
 .verification-email {
