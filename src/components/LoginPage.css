@@ -22,12 +22,7 @@
 }
 
 .logo_one .img img {
-  width: 100px;  /* Adjust as per your design */
-  background-image: url('../assets/logo.png');
-
-}
-.img {
-  width: 100px;  /* Adjust as per your design */
+  /* width: 100px;  Adjust as per your design */
   background-image: url('../assets/logo.png');
 
 }
