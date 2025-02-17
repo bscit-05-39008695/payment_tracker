@@ -21,9 +21,13 @@
   height: 800px;
 }
 
-.logo_one .img{
+.logo_one .img img {
   width: 100px;  /* Adjust as per your design */
-  background-image: url('../assets/Logo.png');
+}
+.img {
+  width: 100px;  /* Adjust as per your design */
+  background-image: url('../assets/logo.png');
+
 }
 
 h5 {
