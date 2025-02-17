@@ -18,7 +18,7 @@ html, body {
 .verification-card {
     width: 100%;
     max-width: 500px;
-    padding: 2rem;
+    padding: 1rem;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -67,8 +67,8 @@ html, body {
 }
 
 .verification-input {
-    width: 48px;  /* Increased input size */
-    height: 48px;  /* Increased input size */
+    width: 38px;  /* Increased input size */
+    height: 38px;  /* Increased input size */
     text-align: center;
     background-color: #111827;
     border: 1px solid #374151;
