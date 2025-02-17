@@ -116,6 +116,8 @@ button:hover {
   display: flex;
   justify-content: center; /* Align the image to the right */
   background-image: url('../assets/rightlogo.png');
+  width: 493px;
+  height: 423px;
 }
 
 .log_fle_two_log_bg .img img {
