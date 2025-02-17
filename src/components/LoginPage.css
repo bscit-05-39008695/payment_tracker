@@ -23,6 +23,7 @@
 
 .logo_one .img img {
   width: 100px;  /* Adjust as per your design */
+  background-image: url('../assets/Logo.png');
 }
 
 h5 {
