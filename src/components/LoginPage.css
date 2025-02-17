@@ -21,7 +21,7 @@
   height: 800px;
 }
 
-.logo_one .img img {
+.logo_one .img{
   width: 100px;  /* Adjust as per your design */
   background-image: url('../assets/Logo.png');
 }
