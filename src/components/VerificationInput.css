@@ -156,7 +156,8 @@ html, body {
     .verification-card {
         max-width: 100%;
         margin-right: 0;
-        height: 874px;  /* Fixed height for small and large phone screens */
+        margin-left: -15px;
+        height: 774px;  /* Fixed height for small and large phone screens */
     }
 
     .verification-inputs {
