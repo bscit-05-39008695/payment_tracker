@@ -112,7 +112,6 @@ const LoginPage = () => {
         <div className="log_flex_two_bg_relative">
           <div className="log_fle_two_log_bg">
           <div className="img">
-              <img src="/src/assets/rightlogo.png" /> */
             </div>
           </div>
         </div>
