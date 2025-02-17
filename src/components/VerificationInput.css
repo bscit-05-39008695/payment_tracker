@@ -191,7 +191,7 @@ html, body {
     }
 
     .verification-card {
-        height: 674px;  /* Fixed height for small and large phone screens */
+        height: 574px;  /* Fixed height for small and large phone screens */
     }
 
     .verification-inputs {
