@@ -27,8 +27,11 @@ html, body {
     max-height: 100%; /* Ensure it doesn't overflow */
 }
 
-.verification-header {
+.verification-header1 {
     margin-bottom: 2rem;
+    background-image: url('../assets/logo.png');
+    width: 145px;
+    height: 50px;
 }
 
 
