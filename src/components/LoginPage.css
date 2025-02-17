@@ -115,6 +115,7 @@ button:hover {
   width: 100%; /* Full width of the parent container */
   display: flex;
   justify-content: center; /* Align the image to the right */
+  background-image: url('../assets/rightlogo.png');
 }
 
 .log_fle_two_log_bg .img img {
