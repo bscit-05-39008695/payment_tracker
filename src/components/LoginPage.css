@@ -23,8 +23,10 @@
 
 .logo_one .img img {
   width: 100px;  /* Adjust as per your design */
+  background-image: url('../assets/logo.png');
+
 }
-.img1 {
+.img {
   width: 100px;  /* Adjust as per your design */
   background-image: url('../assets/logo.png');
 
