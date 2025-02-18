@@ -147,4 +147,7 @@ button:hover {
   .log_flex_two {
     display: none; /* Hide the second container on small screens */
   }
+  .log_flex {
+    height: 874px;
+  }
 }
