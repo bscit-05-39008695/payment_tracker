@@ -76,7 +76,7 @@ const LoginPage = () => {
           
           <div className="imput_cont">
           {(emailError || passwordError) && (
-             <p className="validation-error" style={{ color: 'red', fontSize: '12px', marginBottom: '5px' }}>
+             <p className="validation-error" style={{ color: 'red', fontSize: '20px', marginBottom: '5px' }}>
                Please enter a correct email address and password. Note that both fields may be case-sensitive.
              </p>
             )}
