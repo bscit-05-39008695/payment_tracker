@@ -2,30 +2,46 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-  }
+    background-color: aqua;
+}
+
 .container {
-    max-width: 820px; /* Increased container width */
-    margin: 0 auto;
-    padding: 16px;
+    max-width: 750px; /* Increased container width */
+    margin: 2px auto;
+    padding: 20px;
     background-color: white;
-    border-radius: 1px solid white; /* Gray 200 */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align children to the start (left) */
+    align-items: flex-start; /* Align children to the start (left) */
+    height: 100%; /* Ensures container takes up full height */
+}
+
+.tracking-header,
+.tracking-text,
+.tracking-id,
+.timeline,
+.customer-details {
+    margin-bottom: 20px; /* Reduced bottom margin for better spacing */
 }
 
 .tracking-header {
-    margin-bottom: 24px;
-    font-size: 40px; /* Font size increased */
+    font-size: 36px; /* Font size reduced from 40px */
+    text-align: left; /* Ensure the header is aligned to the left */
 }
 
 .tracking-text {
     color: #3b82f6; /* Blue */
-    font-size: 30px; /* Font size increased */
+    font-size: 26px; /* Font size reduced from 30px */
+    text-align: left; /* Align text to the left */
 }
 
 .tracking-id {
     text-decoration: underline;
-    font-size: 26px; /* Font size increased */
+    font-size: 22px; /* Font size reduced from 26px */
+    text-align: left; /* Align text to the left */
 }
 
 .timeline {
@@ -45,8 +61,8 @@ html, body {
 }
 
 .circle {
-    width: 36px; /* Increased circle size */
-    height: 36px; /* Increased circle size */
+    width: 32px; /* Reduced circle size from 36px */
+    height: 32px; /* Reduced circle size from 36px */
     flex-shrink: 0;
     margin-top: 4px;
 }
@@ -63,70 +79,64 @@ html, body {
 
 .panel-text {
     font-weight: 300;
-    font-size: 18px; /* Font size increased */
+    font-size: 16px; /* Font size reduced from 18px */
 }
 
 .panel-date {
     color: #6b7280; /* Gray */
-    font-size: 18px; /* Font size increased */
-}
-
-.panel.links { /* Changed class name to .links */
-    background-color: #f9fafb; /* Gray 50 */
-}
-
-.panel-content {
-    display: flex;
-    flex-direction: column;
-    gap: -6px;
+    font-size: 16px; /* Font size reduced from 18px */
 }
 
 .btn-accept {
     border: none;
-    font-size: 18px; /* Font size increased */
+    font-size: 16px; /* Font size reduced from 18px */
 }
 
 .btn-cancel {
-    font-size: 18px; /* Font size increased */
+    font-size: 16px; /* Font size reduced from 18px */
     color: #dc2626;
-    margin-top: 4px;
 }
 
 .panel-note {
     color: #6b7280;
-    font-size: 16px; /* Font size increased */
+    font-size: 14px; /* Font size reduced from 16px */
 }
 
 .customer-details {
-    margin-top: 30px;
     background-color: #f9fafb; /* Gray 50 */
     border-radius: 3px;
-    width: 350px; /* Increased customer details width */
+    text-align: left; /* Align customer details to the left */
+    padding: 20px;
 }
 
 .customer-header {
-    margin-bottom: -9px;
+    margin-bottom: 0;
+    text-align: left; /* Align header text to the left */
 }
 
 .customer-title {
     color: #3b82f6; /* Blue */
-    font-size: 18px; /* Font size increased */
+    font-size: 16px; /* Font size reduced from 18px */
+    text-align: left; /* Align text to the left */
 }
 
 .customer-info {
     display: flex;
     flex-direction: column;
+    text-align: left; /* Align customer info to the left */
 }
 
 .customer-label {
     font-weight: 400;
-    font-size: 18px; /* Font size increased */
+    font-size: 16px; /* Font size reduced from 18px */
+    text-align: left; /* Align text to the left */
 }
+
 .circle.yellow {
     background-color: #f59e0b; /* Yellow color */
     color: #f59e0b;
-    width: 36px; /* Circle size */
-    height: 36px; /* Circle size */
+    width: 32px; /* Reduced circle size from 36px */
+    height: 32px; /* Reduced circle size from 36px */
     flex-shrink: 0;
     margin-top: 40px;
     animation: blink 1s infinite; /* Apply the blink animation every second */
@@ -145,3 +155,52 @@ html, body {
     }
 }
 
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Reduce padding to make the content fill more space */
+    }
+
+    .tracking-header,
+    .tracking-text,
+    .tracking-id,
+    .timeline,
+    .customer-details {
+        margin-bottom: 10px; /* Reduce bottom margin to make better use of space */
+    }
+
+    .customer-details {
+        margin-top: 0; /* Remove the extra margin from the top */
+    }
+
+    .circle {
+        width: 28px; /* Reduce circle size on small screens */
+        height: 28px;
+    }
+
+    .tracking-header {
+        font-size: 30px; /* Reduce font size on smaller screens */
+    }
+
+    .tracking-text {
+        font-size: 22px; /* Reduce font size on smaller screens */
+    }
+
+    .tracking-id {
+        font-size: 18px; /* Reduce font size on smaller screens */
+    }
+    
+    .panel-text,
+    .panel-date,
+    .btn-accept,
+    .btn-cancel,
+    .panel-note,
+    .customer-title,
+    .customer-label {
+        font-size: 14px; /* Reduce font size for better spacing */
+    }
+    
+    .panel-note {
+        font-size: 12px; /* Smaller font size for note section */
+    }
+}

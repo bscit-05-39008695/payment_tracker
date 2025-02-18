@@ -15,7 +15,7 @@ const PaymentTracking = () => {
       {/* Timeline Panels */}
       <div className="timeline">
         {/* Panel 1 */}
-        <div className="panel" style={{maxWidth: '800px'}}>
+        <div className="panel" >
           <Circle className="circle blue" style={{marginTop: '30px'}}/>
           <div>
             <p className="panel-text">Payment of $ 350 made by the buyer from their BANK ACCOUNT via PaxfulPay</p>
@@ -24,7 +24,7 @@ const PaymentTracking = () => {
         </div>
 
         {/* Panel 2 */}
-        <div className="panel" style={{maxWidth: '800px'}}>
+        <div className="panel" >
           <Circle className="circle yellow" style={{marginTop: '40px'}} />
           <div>
             <p className="panel-text">Transaction processed successfully by PaxfulPay to be deposited in your BANK ACCOUNT TO Moxie Leigh Maharlika,211255092300 account</p>
@@ -33,20 +33,22 @@ const PaymentTracking = () => {
         </div>
 
         {/* Panel 3 */}
-        <div className="panel links" style={{maxWidth: '800px'}}>
-          <Circle className="circle blue"  style={{marginTop: '120px'}}/>
+        <div className="panel links" >
+          <Circle className="circle blue"  style={{marginTop: '85px'}}/>
           <div className="panel-content">
             <p className="panel-text">Accept payment via the open trade in the respective account.</p>
             <p className="panel-text">REQUIRED:</p>
             <p className="panel-text" >Link respective account to complete this step.</p>
+            <div style={{display: 'flex', flexDirection: 'column', gap: '5px'}}>
               <Link to="/login" className="btn btn-accept">Accept Payment</Link>
               <Link to="/login" className="btn btn-cancel">Cancel The Transfer</Link>
+            </div>
             <p className="panel-note">Once initiated, the transfer process can only be completed or cancelled by the seller.</p>
           </div>
         </div>
 
         {/* Panel 4 */}
-        <div className="panel" style={{maxWidth: '800px'}}>
+        <div className="panel" >
           <Circle className="circle blue" style={{marginTop: '30px'}} />
           <div>
             <p className="panel-text">Funds received by the Seller</p>
