@@ -154,5 +154,6 @@ button:hover {
 @media (max-width: 200px) {
   .log_flex_one {
     padding: 10px;  /* Reduce padding for ultra small screens */
+    height: 874px;
   }
 }
