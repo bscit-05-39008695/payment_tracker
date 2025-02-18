@@ -142,7 +142,7 @@ button:hover {
 @media (max-width: 768px) {
   .log_flex_one {
     width: 100%;  /* Take up the entire width on smaller screens */
-    height: 90vh; /* Ensure the height takes up the entire screen */
+    height: 100vh; /* Ensure the height takes up the entire screen */
   }
   .log_flex_two {
     display: none; /* Hide the second container on small screens */
