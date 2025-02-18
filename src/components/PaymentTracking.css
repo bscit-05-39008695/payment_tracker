@@ -17,10 +17,18 @@ html, body {
     flex-direction: column;
     justify-content: flex-start; /* Align children to the start (left) */
     align-items: flex-start; /* Align children to the start (left) */
+    height: 100%; /* Ensures container takes up full height */
+}
+
+.tracking-header,
+.tracking-text,
+.tracking-id,
+.timeline,
+.customer-details {
+    margin-bottom: 20px; /* Reduced bottom margin for better spacing */
 }
 
 .tracking-header {
-    margin-bottom: 24px;
     font-size: 36px; /* Font size reduced from 40px */
     text-align: left; /* Ensure the header is aligned to the left */
 }
@@ -96,15 +104,15 @@ html, body {
 }
 
 .customer-details {
-    margin-top: 30px;
     background-color: #f9fafb; /* Gray 50 */
     border-radius: 3px;
-    width: auto; /* Increased customer details width */
+    width: 100%; /* Ensure it takes the full width */
     text-align: left; /* Align customer details to the left */
+    padding: 20px;
 }
 
 .customer-header {
-    margin-bottom: -9px;
+    margin-bottom: 0;
     text-align: left; /* Align header text to the left */
 }
 
@@ -146,5 +154,56 @@ html, body {
     }
     100% {
         opacity: 1; /* Fully visible again at the end */
+    }
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Reduce padding to make the content fill more space */
+    }
+
+    .tracking-header,
+    .tracking-text,
+    .tracking-id,
+    .timeline,
+    .customer-details {
+        margin-bottom: 10px; /* Reduce bottom margin to make better use of space */
+    }
+
+    .customer-details {
+        width: 100%; /* Ensure it stretches to full width */
+        margin-top: 0; /* Remove the extra margin from the top */
+    }
+
+    .circle {
+        width: 28px; /* Reduce circle size on small screens */
+        height: 28px;
+    }
+
+    .tracking-header {
+        font-size: 30px; /* Reduce font size on smaller screens */
+    }
+
+    .tracking-text {
+        font-size: 22px; /* Reduce font size on smaller screens */
+    }
+
+    .tracking-id {
+        font-size: 18px; /* Reduce font size on smaller screens */
+    }
+    
+    .panel-text,
+    .panel-date,
+    .btn-accept,
+    .btn-cancel,
+    .panel-note,
+    .customer-title,
+    .customer-label {
+        font-size: 14px; /* Reduce font size for better spacing */
+    }
+    
+    .panel-note {
+        font-size: 12px; /* Smaller font size for note section */
     }
 }
