@@ -16,16 +16,16 @@
   background-color: black;
   display: flex;
   flex-direction: column; /* Ensure items inside are aligned vertically */
-  width: 100%;  /* Make the width 100% for flexibility */
-  max-width: 615px; /* Cap on the width for larger screens */
-  box-sizing: border-box;  /* Ensure padding doesn't push beyond the width */
+  width: 70%;  /* Increase the width to 70% or adjust as needed */
+  max-width: 615px; /* Add a max-width if you want a cap on the width */
   height: 800px;
 }
 
 .logo_one .img {
-  width: 145px;  /* Adjust as per your design */
+  width: 145px;  /*Adjust as per your design */
   background-image: url('../assets/logo.png');
   height: 50px;
+
 }
 
 h5 {
@@ -143,35 +143,8 @@ button:hover {
   .log_flex_one {
     width: 100%;  /* Take up the entire width on smaller screens */
     height: 100vh; /* Ensure the height takes up the entire screen */
-    max-width: none;  /* Remove max-width constraint */
   }
   .log_flex_two {
     display: none; /* Hide the second container on small screens */
   }
 }
-
-/* Further adjustments for very small screens (e.g., 200px) */
-@media (max-width: 200px) {
-  .log_flex_one {
-    padding: 10px;  /* Reduce padding for ultra small screens */
-    height: 874px;
-  }
-  
-
-}
-@media (max-width: 200px) {
-  .log_flex_one {
-    padding: 10px;  /* Reduce padding for ultra small screens */
-    height: 874px;
-  }
-}
-@media (max-width: 100px) {
-  .log_flex_one {
-    padding: 10px;  /* Reduce padding for ultra small screens */
-    height: 874px;
-  }
-  
-
-}
-
-
