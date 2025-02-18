@@ -2,7 +2,6 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: aqua;
 }
 
 .container {
@@ -106,7 +105,6 @@ html, body {
 .customer-details {
     background-color: #f9fafb; /* Gray 50 */
     border-radius: 3px;
-    width: 100%; /* Ensure it takes the full width */
     text-align: left; /* Align customer details to the left */
     padding: 20px;
 }
