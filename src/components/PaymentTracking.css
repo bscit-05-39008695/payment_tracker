@@ -170,7 +170,6 @@ html, body {
     }
 
     .customer-details {
-        width: 100%; /* Ensure it stretches to full width */
         margin-top: 0; /* Remove the extra margin from the top */
     }
 
