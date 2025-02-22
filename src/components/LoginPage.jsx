@@ -26,7 +26,7 @@ const LoginPage = () => {
     }
 
     try {
-      const response = await fetch('https://paxful-backend-4.onrender.com/login', {
+      const response = await fetch('http://127.0.0.1:5000/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -74,14 +74,17 @@ const LoginPage = () => {
         <form id="loginForm" onSubmit={handleSubmit}>
           {error && <p className="error">{error}</p>}
           
-          <div className="imput_cont">
+          <div className="imput_cont" style={{backgroundColor: 'white',marginBottom: '20px' }}>
           {(emailError || passwordError) && (
-             <p className="validation-error" style={{ color: 'red', fontSize: '20px', marginBottom: '5px' }}>
+             <p className="validation-error" style={{ color: 'red', fontSize: '14px', marginBottom: '5px' }}>
                Please enter a correct email address and password. Note that both fields may be case-sensitive.
              </p>
             )}
+            </div>
 
-            <h4>Email / Phone Number</h4>
+          <div className="imput_cont">
+
+            <h4 style={{ marginTop: '20px' }}>Email / Phone Number</h4>
             <div className="input">
               <input
                 type="email"
@@ -95,7 +98,7 @@ const LoginPage = () => {
           </div>
 
           <div className="imput_cont">
-            <h4>Password</h4>
+            <h4 style={{ marginTop: '20px' }}>Password</h4>
             <div className="input">
               <input
                 id="password"
