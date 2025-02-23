@@ -2,8 +2,6 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    width: 100%;
-    overflow-x: hidden;
 }
 
 .verification-container {
@@ -12,6 +10,7 @@ html, body {
     color: white;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     align-items: flex-start;
     width: 100%;
 }
@@ -24,9 +23,8 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    min-height: 100vh;
-    height: 100%;
-    box-sizing: border-box;
+    height: 93.4vh;  /* Default height */
+    max-height: 100%; /* Ensure it doesn't overflow */
 }
 
 .verification-header1 {
@@ -34,20 +32,18 @@ html, body {
     background-image: url('../assets/logo.png');
     width: 145px;
     height: 50px;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 .verification-title {
-    font-size: 2rem;
+    font-size: 2rem;  /* Increased font size */
     font-weight: bold;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;  /* Increased margin */
 }
 
 .verification-description {
     color: #9ca3af;
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    font-size: 1rem;  /* Increased font size */
+    margin-bottom: 1rem;  /* Increased margin */
 }
 
 .verification-email {
@@ -55,40 +51,41 @@ html, body {
 }
 
 .verification-input-section {
-    margin-top: 1.5rem;
+    margin-top: 1.5rem;  /* Increased margin */
 }
 
 .verification-label {
     display: block;
-    font-size: 1rem;
+    font-size: 1rem;  /* Increased font size */
     color: #9ca3af;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.75rem;  /* Increased margin */
 }
 
 .verification-inputs {
     display: flex;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 100%;
+    gap: 0.75rem;  /* Increased gap */
+    flex-wrap: wrap; /* Allow input fields to wrap when necessary */
+    justify-content: space-between; /* Distribute space evenly */
+    max-width: 100%; /* Ensure it takes up full available width */
 }
 
 .verification-input {
-    width: 30px;
-    height: 30px;
+    width: 30px;  /* Default size */
+    height: 30px;  /* Default size */
     text-align: center;
     background-color: #111827;
     border: 1px solid #374151;
     border-radius: 0.5rem;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.5rem;  /* Default font size */
     outline: none;
     transition: border-color 0.2s, box-shadow 0.2s;
-    margin-bottom: 10px;
+    margin-bottom: 10px;  /* Adjusted margin */
     display: flex;
-    flex: 1 1 auto;
+    flex: 1 1 auto; /* Allow it to grow and shrink */
 }
 
+/* Focus state for input fields */
 .verification-input:focus {
     border-color: #22c55e;
     box-shadow: 0 0 0 1px #22c55e;
@@ -101,14 +98,11 @@ html, body {
     width: 490px;
     height: 423px;
     background-image: url('../assets/rightlogo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 .side-image {
     width: 490px;
     height: 423px;
-    object-fit: contain;
 }
 
 .verification-message {
@@ -129,107 +123,31 @@ html, body {
     font-size: 0.875rem;
     color: #718096;
 }
-
-/* Mobile styles */
 @media (max-width: 780px) {
     .verification-container {
-        min-height: 100vh;
-        height: 100%;
-        overflow: hidden;
-        background-color: black;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+      height: 100vh;
+      overflow-y: auto;
+      background-color: black;
     }
   
     .verification-card {
-        width: 100vw;
-        max-width: none;
-        min-height: 100vh;
-        height: 100%;
-        padding: 20px;
-        margin: 0;
-        justify-content: flex-start;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        overflow-y: auto;
-        -webkit-overflow-scrolling: touch;
-    }
+      width: 100%;
+      max-width: 100%;
+      min-height: 100vh;
+      padding: 20px;
+      margin: 0;
+      justify-content: flex-start;
 
-    .verification-inputs {
-        justify-content: center;
-        gap: 0.5rem;
-    }
-
-    .verification-input {
-        width: 40px;
-        height: 40px;
-        font-size: 1.25rem;
+      
     }
 }
 
-/* Desktop styles */
+/* Media query for larger screens */
 @media (min-width: 1024px) {
-    .verification-container {
-        justify-content: space-between;
-        overflow: hidden;
-    }
-
     .verification-image {
         display: block;
-        margin-left: 350px;
+        margin-left: 350px;  /* Push image to the right */
     }
 
-    .verification-card {
-        height: 93.4vh;
-        position: relative;
-    }
-}
 
-/* Fix for desktop mode on mobile */
-@media (max-width: 780px) and (min-width: 600px) {
-    .verification-container {
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-    }
-
-    .verification-card {
-        width: 100%;
-        height: 100vh;
-        max-height: none;
-        padding: 2rem;
-        box-sizing: border-box;
-    }
-
-    .verification-inputs {
-        justify-content: flex-start;
-    }
-
-    .verification-input {
-        width: 45px;
-        height: 45px;
-    }
-}
-
-/* Additional fixes for various mobile browsers */
-@supports (-webkit-touch-callout: none) {
-    .verification-container,
-    .verification-card {
-        /* Fix for iOS height issues */
-        height: -webkit-fill-available;
-    }
-}
-
-@supports not (-webkit-touch-callout: none) {
-    .verification-container,
-    .verification-card {
-        /* Fix for non-iOS browsers */
-        height: 100vh;
-    }
 }
