@@ -140,6 +140,49 @@ html, body {
 
       
     }
+  
+    /* Adjust form elements for better mobile display */
+    .verification-header1 {
+      margin-bottom: 20px;
+    }
+  
+    .verification-title {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+  
+    .verification-description {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+  
+    .verification-input-section {
+      margin-top: 20px;
+    }
+  
+    .verification-label {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+  
+    .verification-inputs {
+      gap: 10px;
+    }
+  
+    .verification-input {
+      width: 40px;
+      height: 40px;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+  
+    .verification-image {
+      display: none;
+    }
+  
+    .side-image {
+      display: none;
+    }
 }
 
 /* Media query for larger screens */
