@@ -32,11 +32,11 @@ justify-content: flex-start; /* Align children to the start (left) */
 align-items: flex-start; /* Align children to the start (left) */
 border-radius: 12px;
 box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-margin-top: 45px;
 }
 
 /* Tracking header styles */
 .tracking-header {
+margin-bottom: 32px;
 padding: 16px;
 background-color: #f8f9fa;
 border-radius: 8px;
@@ -148,19 +148,21 @@ width: 100%;
 
 /* Customer details styles */
 .customer-details {
-padding: 14px;
+margin-top: 7pxpx;
+padding: 8px;
 background-color: #f8f9fa;
 border-radius: 8px;
 }
 
 .customer-header {
-margin-bottom: 16px;
+margin-bottom: 12px;
 }
 
 .customer-title {
 margin: 0 0 16px 0;
 color: #2d3748;
 font-size: 18px;
+font-weight: 600;
 }
 
 .customer-label {
@@ -189,8 +191,9 @@ font-style: italic;
   width: 100%;
   max-width: none;
   min-height: 100vh;
-  margin: 0;
+  margin: 40px;
   justify-content: flex-start;
+  margin-top: 40px;
 
 }
 
