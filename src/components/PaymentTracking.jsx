@@ -17,7 +17,7 @@ const PaymentTracking = () => {
       <div className="timeline">
         {/* Panel 1 */}
         <div className="panel" >
-          <Circle className="circle blue" style={{marginTop: '30px'}}/>
+          <Circle className="circle blue"/>
           <div>
             <p className="panel-text">Payment of $ 350 made by the buyer from their BANK ACCOUNT via PaxfulPay</p>
             <p className="panel-date">9 February 2025</p>
@@ -25,8 +25,8 @@ const PaymentTracking = () => {
         </div>
 
         {/* Panel 2 */}
-        <div className="panel" >
-          <Circle className="circle yellow" style={{marginTop: '40px'}} />
+        <div className="panel">
+          <Circle className="circle yellow"/>
           <div>
             <p className="panel-text">Transaction processed successfully by PaxfulPay to be deposited in your BANK ACCOUNT TO Moxie Leigh Maharlika,211255092300 account</p>
             <p className="panel-date">9 February 2025</p>
@@ -35,7 +35,7 @@ const PaymentTracking = () => {
 
         {/* Panel 3 */}
         <div className="panel links" >
-          <Circle className="circle blue"  style={{marginTop: '85px'}}/>
+          <Circle className="circle blue"/>
           <div className="panel-content">
             <p className="panel-text">Accept payment via the open trade in the respective account.</p>
             <p className="panel-text">REQUIRED:</p>
@@ -50,7 +50,7 @@ const PaymentTracking = () => {
 
         {/* Panel 4 */}
         <div className="panel" >
-          <Circle className="circle blue" style={{marginTop: '30px'}} />
+          <Circle className="circle blue" />
           <div>
             <p className="panel-text">Funds received by the Seller</p>
             <p className="panel-date">Instantly</p>
@@ -62,8 +62,6 @@ const PaymentTracking = () => {
       <div className="customer-details">
         <div className="customer-header">
           <h2 className="customer-title">Customer Details</h2>
-        </div>
-        <div className="customer-info">
           <p><span className="customer-label">Transaction ID:</span> 393198</p>
           <p className="customer-label">Notes: Accept transfer for payment release.</p>
           </div>

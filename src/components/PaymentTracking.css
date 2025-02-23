@@ -1,103 +1,139 @@
+
+
+
+
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
 }
-
+/* Container styles */
 .container {
-    max-width: 750px; /* Increased container width */
-    margin: 2px auto;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    background-color: aqua;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Align children to the start (left) */
-    align-items: flex-start; /* Align children to the start (left) */
-    height: 100%; /* Ensures container takes up full height */
-}
-.container {
-    max-width: 750px; /* Increased container width */
-    margin: 2px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    background-color: aqua;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Align children to the start (left) */
-    align-items: flex-start; /* Align children to the start (left) */
-    height: 100%; /* Ensures container takes up full height */
+width: 100%;
+margin: 0 auto;
+font-family: system-ui, -apple-system, sans-serif;
+background-color: white;
+height: 100vh;
+justify-content: center;
+align-items: center;
+display: flex;
+
 }
 
-.tracking-header,
-.tracking-text,
-.tracking-id,
-.timeline,
-.customer-details {
-    margin-bottom: 20px; /* Reduced bottom margin for better spacing */
+.container1 {
+max-width: 750px; /* Increased container width */
+margin: 2px auto;
+padding: 20px;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+background-color: aqua;
+display: flex;
+flex-direction: column;
+justify-content: flex-start; /* Align children to the start (left) */
+align-items: flex-start; /* Align children to the start (left) */
+border-radius: 12px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Tracking header styles */
 .tracking-header {
-    font-size: 36px; /* Font size reduced from 40px */
-    text-align: left; /* Ensure the header is aligned to the left */
+margin-bottom: 32px;
+padding: 16px;
+background-color: #f8f9fa;
+border-radius: 8px;
 }
 
 .tracking-text {
-    color: #3b82f6; /* Blue */
-    font-size: 26px; /* Font size reduced from 30px */
-    text-align: left; /* Align text to the left */
+font-size: 16px;
+color: #4a5568;
 }
 
 .tracking-id {
-    text-decoration: underline;
-    font-size: 22px; /* Font size reduced from 26px */
-    text-align: left; /* Align text to the left */
+font-weight: 600;
+color: #2d3748;
+margin-left: 4px;
 }
 
+/* Timeline styles */
 .timeline {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+position: relative;
+padding-left: 32px;
 }
 
+.timeline::before {
+content: '';
+position: absolute;
+left: 7px;
+top: 0;
+bottom: 0;
+width: 2px;
+background-color: #e2e8f0;
+}
+
+/* Panel styles */
 .panel {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-    padding-left: 16px;
-    border-left: 2px solid #3b82f6; /* Blue */
-    background-color: #f9fafb; /* Gray 50 */
-    width: 100%; /* Ensure it spans the available width */
+position: relative;
+margin-bottom: 24px;
+display: flex;
+gap: 16px;
 }
 
 .circle {
-    width: 32px; /* Reduced circle size from 36px */
-    height: 32px; /* Reduced circle size from 36px */
-    flex-shrink: 0;
-    margin-top: 4px;
-}
-
-.circle.blue {
-    background-color: #3b82f6;
-    color: #3b82f6;
-}
-
-.circle.yellow {
-    background-color: #f59e0b;
-    color: #f59e0b;
-}
+    position: absolute;
+    left: -32px;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for exact centering */
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-top: 0 !important; /* Remove inline margin-top */
+  }
+  
+  .circle.blue {
+    color: #3182ce;
+    background-color: #ebf8ff;
+  }
+  
+  /* Blinking animation for yellow circle */
+  @keyframes blink {
+    0% {
+      opacity: 1;
+      transform: translateY(-50%) scale(1);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateY(-50%) scale(1.2);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(-50%) scale(1);
+    }
+  }
+  
+  .circle.yellow {
+    color: #d69e2e;
+    background-color: #fffff0;
+    animation: blink 1s infinite;
+  }
 
 .panel-text {
-    font-weight: 300;
-    font-size: 16px; /* Font size reduced from 18px */
+margin: 0 0 8px 0;
+color: #2d3748;
+font-size: 14px;
+line-height: 1.5;
 }
 
 .panel-date {
-    color: #6b7280; /* Gray */
-    font-size: 16px; /* Font size reduced from 18px */
+margin: 0;
+color: #718096;
+font-size: 12px;
+}
+
+/* Links panel specific styles */
+.panel.links .panel-content {
+background-color: #f7fafc;
+padding: 16px;
+border-radius: 8px;
+width: 100%;
 }
 
 .btn-accept {
@@ -110,125 +146,76 @@ html, body {
     color: #dc2626;
 }
 
-.panel-note {
-    color: #6b7280;
-    font-size: 14px; /* Font size reduced from 16px */
-}
-
+/* Customer details styles */
 .customer-details {
-    background-color: #f9fafb; /* Gray 50 */
-    border-radius: 3px;
-    text-align: left; /* Align customer details to the left */
-    padding: 20px;
+margin-top: 32px;
+padding: 24px;
+background-color: #f8f9fa;
+border-radius: 8px;
 }
 
 .customer-header {
-    margin-bottom: 0;
-    text-align: left; /* Align header text to the left */
+margin-bottom: 16px;
 }
 
 .customer-title {
-    color: #3b82f6; /* Blue */
-    font-size: 16px; /* Font size reduced from 18px */
-    text-align: left; /* Align text to the left */
-}
-
-.customer-info {
-    display: flex;
-    flex-direction: column;
-    text-align: left; /* Align customer info to the left */
+margin: 0 0 16px 0;
+color: #2d3748;
+font-size: 18px;
+font-weight: 600;
 }
 
 .customer-label {
-    font-weight: 400;
-    font-size: 16px; /* Font size reduced from 18px */
-    text-align: left; /* Align text to the left */
+color: #4a5568;
+font-weight: 500;
 }
 
-.circle.yellow {
-    background-color: #f59e0b; /* Yellow color */
-    color: #f59e0b;
-    width: 32px; /* Reduced circle size from 36px */
-    height: 32px; /* Reduced circle size from 36px */
-    flex-shrink: 0;
-    margin-top: 40px;
-    animation: blink 1s infinite; /* Apply the blink animation every second */
+/* Panel note style */
+.panel-note {
+margin-top: 16px;
+font-size: 12px;
+color: #718096;
+font-style: italic;
 }
 
-/* Keyframes for blinking effect */
-@keyframes blink {
-    0% {
-        opacity: 1; /* Fully visible at the start */
-    }
-    50% {
-        opacity: 0; /* Invisible at the halfway point */
-    }
-    100% {
-        opacity: 1; /* Fully visible again at the end */
-    }
-}
-
-/* Responsive adjustments for small screens */
+/* Responsive styles */
 @media (max-width: 768px) {
-    .container {
-        padding: 10px; /* Reduce padding to make the content fill more space */
-    }
-
-    .tracking-header,
-    .tracking-text,
-    .tracking-id,
-    .timeline,
-    .customer-details {
-        margin-bottom: 10px; /* Reduce bottom margin to make better use of space */
-    }
-
-    .customer-details {
-        margin-top: 0; /* Remove the extra margin from the top */
-    }
-
-    .circle {
-        width: 28px; /* Reduce circle size on small screens */
-        height: 28px;
-    }
-
-    .tracking-header {
-        font-size: 30px; /* Reduce font size on smaller screens */
-    }
-
-    .tracking-text {
-        font-size: 22px; /* Reduce font size on smaller screens */
-    }
-
-    .tracking-id {
-        font-size: 18px; /* Reduce font size on smaller screens */
-    }
-    
-    .panel-text,
-    .panel-date,
-    .btn-accept,
-    .btn-cancel,
-    .panel-note,
-    .customer-title,
-    .customer-label {
-        font-size: 14px; /* Reduce font size for better spacing */
-    }
-    
-    .panel-note {
-        font-size: 12px; /* Smaller font size for note section */
-    }
+.container {
+  padding: 16px;
+  height: 100vh;
+  overflow-y: auto;
 }
-@media (max-width: 780px) {
-    .container {
-      height: 100vh;
-      overflow-y: auto;
-    }
-  
-    .container1 {
-      width: 100%;
-      max-width: none;
-      min-height: 100vh;
-      padding: 20px;
-      margin: 0;
-      justify-content: flex-start;
-    }
+
+.container1 {
+  padding: 16px;
+  width: 100%;
+  max-width: none;
+  min-height: 100vh;
+  margin: 0;
+  justify-content: flex-start;
+
 }
+
+.timeline {
+  padding-left: 24px;
+}
+
+.circle {
+  left: -24px;
+}
+
+.panel {
+  gap: 12px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
