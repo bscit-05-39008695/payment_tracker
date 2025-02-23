@@ -157,7 +157,7 @@ button:hover {
 }
 
 /* Adjustments for smaller screen sizes */
-@media (max-width: 780px) {
+@media (max-width: 1024px) {
   .log_flex {
     height: 100vh;
     overflow-y: auto;
