@@ -5,6 +5,7 @@ import './PaymentTracking.css';
 const PaymentTracking = () => {
   return (
     <div className="container">
+      <div className="container1">
       {/* Tracking Number Header */}
       <div className="tracking-header">
         <span className="tracking-text">
@@ -65,6 +66,7 @@ const PaymentTracking = () => {
         <div className="customer-info">
           <p><span className="customer-label">Transaction ID:</span> 393198</p>
           <p className="customer-label">Notes: Accept transfer for payment release.</p>
+          </div>
         </div>
       </div>
     </div>

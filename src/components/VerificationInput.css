@@ -123,6 +123,23 @@ html, body {
     font-size: 0.875rem;
     color: #718096;
 }
+@media (max-width: 780px) {
+    .verification-container {
+      height: 100vh;
+      overflow-y: auto;
+      background-color: black;
+    }
+  
+    .verification-card {
+      width: 100%;
+      max-width: none;
+      min-height: 100vh;
+      padding: 20px;
+      margin: 0;
+      justify-content: flex-start;
+      
+    }
+}
 
 /* Media query for larger screens */
 @media (min-width: 1024px) {
@@ -131,70 +148,5 @@ html, body {
         margin-left: 350px;  /* Push image to the right */
     }
 
-    .verification-card {
-        width: 70%;  /* Make card wider on large screens */
-        padding: 2rem 3rem;  /* Adjust padding */
-    }
-}
 
-/* Adjust for very large screens */
-@media (min-width: 1440px) {
-    .verification-card {
-        padding: 2rem 6rem;  /* Increased padding for larger screens */
-        width: 60%;  /* Adjust width */
-    }
-}
-
-/* Handle smaller screens (tablets and below) */
-@media (max-width: 1023px) {
-    .verification-container {
-        flex-direction: column;
-        justify-content: center;
-        padding: 0 2rem;
-    }
-
-    .verification-card {
-        max-width: 100%;
-        margin-right: 0;
-        margin-left: -32px;
-        height: 574px;  /* Fixed height for small and large phone screens */
-    }
-
-    .verification-inputs {
-        gap: 0.5rem; /* Reduce gap between inputs on smaller screens */
-    }
-}
-
-/* Media query for smaller screens (tablets and below) */
-@media (max-width: 768px) {
-    .verification-input {
-        width: 25px;  /* Smaller width */
-        height: 25px;  /* Smaller height */
-        font-size: 1rem;  /* Smaller font size */
-    }
-
-    .verification-card {
-        height: 574px;  /* Fixed height for small and large phone screens */
-    }
-
-    .verification-inputs {
-        gap: 0.35rem;  /* Reduce gap between inputs */
-    }
-}
-
-/* Even smaller screens, like mobile */
-@media (max-width: 480px) {
-    .verification-input {
-        width: 14px;  /* Even smaller width */
-        height: 14px;  /* Even smaller height */
-        font-size: 1rem;  /* Even smaller font size */
-    }
-
-    .verification-card {
-        height: 874px;  /* Fixed height for small and large phone screens */
-    }
-
-    .verification-inputs {
-        gap: 0.25rem;  /* Reduce gap further on very small screens */
-    }
 }

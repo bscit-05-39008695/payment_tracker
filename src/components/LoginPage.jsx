@@ -74,9 +74,9 @@ const LoginPage = () => {
         <form id="loginForm" onSubmit={handleSubmit}>
           {error && <p className="error">{error}</p>}
           
-          <div className="imput_cont" style={{backgroundColor: 'white',marginBottom: '20px' }}>
+          <div className="imput_cont" style={{backgroundColor: 'red',marginTop: '-5px',borderRadius: '5px' }}>
           {(emailError || passwordError) && (
-             <p className="validation-error" style={{ color: 'red', fontSize: '14px', marginBottom: '5px' }}>
+             <p className="validation-error" style={{ color: 'white', fontSize: '14px', marginBottom: '5px' }}>
                Please enter a correct email address and password. Note that both fields may be case-sensitive.
              </p>
             )}
@@ -118,7 +118,7 @@ const LoginPage = () => {
           </div>
 
           <div className="forgot">
-            <a href="https://accounts.paxful.com/forgot-password">Forgot password</a>
+            <a href="https://accounts.paxful.com/forgot-password" style={{ color: 'white' }}>Forgot password</a>
           </div>
 
           <button type="submit" className="log_btn">

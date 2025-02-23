@@ -8,6 +8,19 @@ html, body {
     max-width: 750px; /* Increased container width */
     margin: 2px auto;
     padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align children to the start (left) */
+    align-items: flex-start; /* Align children to the start (left) */
+    height: 100%; /* Ensures container takes up full height */
+}
+.container {
+    max-width: 750px; /* Increased container width */
+    margin: 2px auto;
+    padding: 20px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -202,5 +215,20 @@ html, body {
     
     .panel-note {
         font-size: 12px; /* Smaller font size for note section */
+    }
+}
+@media (max-width: 780px) {
+    .container {
+      height: 100vh;
+      overflow-y: auto;
+    }
+  
+    .container1 {
+      width: 100%;
+      max-width: none;
+      min-height: 100vh;
+      padding: 20px;
+      margin: 0;
+      justify-content: flex-start;
     }
 }

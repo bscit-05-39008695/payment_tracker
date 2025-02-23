@@ -45,14 +45,15 @@ h5 {
 }
 
 .p_l_s_o {
-  color: #C5F74F;
-  text-decoration: none;
+  color: white;
+  text-decoration: underline;
   margin-top: 15px;
-  font-size: 1.1rem; /* Increased font size */
+  font-size: 1rem; /* Increased font size */
 }
 .p_l_f_o {
   margin-right: 9px;
   margin-bottom: 0px;
+  font-size: 1rem; /* Increased font size */
 }
 
 .error {
@@ -150,7 +151,9 @@ button:hover {
   width: 100%;                /* Make sure it takes the full width */
   margin-top: 10px; 
   margin-bottom: 10px;          /* Space between the input fields */
-  font-size: 1.1rem;  /* Increased font size for forgot password link */
+  font-size: 1rem;  /* Increased font size for forgot password link */
+  color: white;
+  text-decoration: underline;
 }
 
 /* Adjustments for smaller screen sizes */
