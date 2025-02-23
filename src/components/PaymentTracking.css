@@ -32,6 +32,8 @@ justify-content: flex-start; /* Align children to the start (left) */
 align-items: flex-start; /* Align children to the start (left) */
 border-radius: 12px;
 box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+margin-top: 150px;
+margin-bottom: 100px;
 }
 
 /* Tracking header styles */
