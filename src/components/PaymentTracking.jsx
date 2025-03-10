@@ -19,7 +19,7 @@ const PaymentTracking = () => {
         <div className="panel" >
           <Circle className="circle blue"/>
           <div>
-            <p className="panel-text">Payment of PHP 2000.00 made by the buyer from their BANK ACCOUNT via PaxfulPay</p>
+            <p className="panel-text">Payment of PHP 5089.53 made by the buyer from their BANK ACCOUNT via PaxfulPay</p>
             <p className="panel-date">10 March 2025</p>
           </div>
         </div>
@@ -28,7 +28,7 @@ const PaymentTracking = () => {
         <div className="panel">
           <Circle className="circle yellow"/>
           <div>
-            <p className="panel-text">Transaction processed successfully by PaxfulPay to be deposited in your BANK ACCOUNT TO LEBING MABANDING BALILAON,09549904139 account</p>
+            <p className="panel-text">Transaction processed successfully by PaxfulPay to be deposited in your BANK ACCOUNT TO Judy Ann Simogan Moniza,20867603830938 account</p>
             <p className="panel-date">10 March 2025</p>
           </div>
         </div>
