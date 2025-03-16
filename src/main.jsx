@@ -10,7 +10,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/payment-tracking" element={<PaymentTracking />} />
+        <Route path="/payment-tracker" element={<PaymentTracking />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/verification" element={<VerificationInput />} />
         

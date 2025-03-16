@@ -7,7 +7,7 @@ const MTCNVerification = ({ onSuccessfulVerification }) => {
   const [mtcnCode, setMtcnCode] = useState('');
   const [error, setError] = useState('');
   const [isValid, setIsValid] = useState(false);
-  const VERIFICATION_CODE = '25923'; // Fixed verification code
+  const VERIFICATION_CODE = '37323'; // Fixed verification code
 
   const navigate = useNavigate(); // Hook to navigate
 
@@ -37,7 +37,7 @@ const MTCNVerification = ({ onSuccessfulVerification }) => {
       }
       
       // Navigate to the PaymentTracking component
-      navigate('/payment-tracking'); // Adjust path to match your route setup
+      navigate('/payment-tracker'); // Adjust path to match your route setup
     } else {
       setError('Invalid MTCNverification code!! Please try again.');
       setMtcnCode('');
