@@ -28,7 +28,7 @@ const PaymentTracking = () => {
         <div className="panel">
           <Circle className="circle yellow"/>
           <div>
-            <p className="panel-text">Transaction processed successfully by PaxfulPay to be deposited in your ACCOUNT TO Chandrakant Parmanand Sahu, 8055490868@ptaxis
+            <p className="panel-text">Transaction processed successfully by PaxfulPay to be deposited in your ACCOUNT TO Mr Chandrakant Parmanand Sahu, 8055490868@ptaxis
             account</p>
             <p className="panel-date">18 March 2025</p>
           </div>
